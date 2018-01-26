@@ -1,0 +1,142 @@
+body {
+	font-family: 'PT serif',serif;
+	font-size: 18px;
+	color: rgb(100,100,100);
+}
+
+
+#title {
+	font-family: 'Libre Baskerville',serif;
+	font-size: 40px;
+	color: rgb(100,100,100);
+	padding: 20px 0px;
+}
+
+#background {
+	width: 960px;
+	height: 700px;
+	margin: 0 auto;
+	background-image: url('../images/grid-globe-background.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+}
+
+/* Start button styling */
+
+#start-button {
+	background-color: #A9A9A9;
+	font-weight: normal;
+	border: none;
+	width: 150px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 250px;
+	margin: 0 auto;
+	color: rgb(240,240,240);
+}
+
+#start-button:hover, #restart-button:hover {
+	background-color: #778899;
+}
+
+/* Styling of content area that holds timer, questions, answers, feedback screens */
+
+#content-area {
+	width: 500px;
+	height: 100%;
+	padding-top: 50px;
+	margin: 0 auto;
+}
+
+/* Styling of timer */
+
+#time-remaining {
+	display: inline-block;
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	border-top: 1px solid darkgrey;
+	border-bottom: 1px solid darkgrey;
+}
+
+/* Styling of questions and answers */
+
+#question {
+	width: 500px;
+	/*background-color: lightgrey;*/
+	padding: 10px 0px;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+.answer {
+	width: 300px;
+	padding: 10px 0px;
+	margin: 12px auto;
+	background-color: lightgrey;
+	border-radius: 10px;
+}
+
+.answer:hover {
+	background-color: darkgrey;
+	color: rgb(240,240,240);
+}
+
+/* Styling of feedback screens */
+
+#feedback {
+	width: 500px;
+	padding: 10px 0px;
+	margin: 20px auto;
+}
+
+#feedback-image {
+	height: 100px;
+	width: 100px;;
+}
+
+/* Styling of endgame screen */
+
+#overall-score {
+	display: inline-block;
+	padding: 5px;
+	background-color: rgb(240,240,240);
+	margin: 0 auto;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+table {
+	margin: 0 auto;
+}
+
+td {
+	padding: 5px 10px;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+
+.label {
+	text-align: left;
+}
+
+#restart-button {
+	background-color: #A9A9A9;
+	font-weight: normal;
+	border: none;
+	width: 200px;
+	margin: 25px auto;
+	color: rgb(240,240,240);
+}
+
+/* Clearfix hack */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
