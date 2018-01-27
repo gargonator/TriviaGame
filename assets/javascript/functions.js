@@ -148,7 +148,7 @@ function nextQuestion(response) {
 // starts the question timer
 function startTimer() {
 	// reset the value for number of seconds left in timer
-	numSeconds = 5;
+	numSeconds = 15;
 
 	// create the timer div and append it to content area
 	var timer = $("<div id='time-remaining'></div>");
@@ -160,7 +160,7 @@ function startTimer() {
 		if (numSeconds === 1) { // if timer has run out
 			$('#time-remaining').text("Time Remaining: " + 0 + " seconds"); // display 0 seconds left
 			console.log('Sorry, time has run out');
-			numSeconds = 5;
+			numSeconds = 15;
 			nextQuestion('timeout'); // display the next question
 		}
 		else {
